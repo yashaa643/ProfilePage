@@ -52,6 +52,14 @@ html{
     padding-left: 20px;
     padding-right: 20px;
 }
+.card a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.card a:hover{
+    color: black;
+}
 .name{
     font-family: "Helvetica";
     font-weight: normal;
