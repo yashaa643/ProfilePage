@@ -20,11 +20,19 @@ html{
 .left{
     float: left;
     width: 30%;
+    margin: auto
 }
 
 .right{
     float: right;
-    width: 65%;
+    width: 68%;
+    margin: auto
+}
+
+.right .card{
+    padding-left: 20px;
+    padding-right: 20px;
+
 }
 
 .card{
@@ -48,10 +56,11 @@ html{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.card p{
+.left .card p{
     padding-left: 20px;
     padding-right: 20px;
 }
+
 .card a{
     text-decoration: none;
     color: inherit;
@@ -84,6 +93,12 @@ html{
     color: rgb(122, 122, 122);
 }
 
+.det{
+    position: fixed;
+    left: 60%;
+    transform:translateX(-60%);
+}
+
 .float-left{
     float: left;
 }
@@ -92,16 +107,7 @@ html{
     float: right;
 }
 
-.column {
-    float: left;
-    width: 50%;
-    margin-left: 5px;
-  }
-  
-
-  /* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+hr{
+    opacity: 30%;
 }
+
