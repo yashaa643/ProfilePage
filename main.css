@@ -42,6 +42,10 @@ html{
     margin-top: 10px;
     text-align: center;
 }
+
+.card:hover{
+    background-image: linear-gradient(to bottom right, white , #FFD700);
+}
 .right .card{
     padding-left: 20px;
     padding-right: 20px;
@@ -50,10 +54,17 @@ html{
 }
 .card img{
     
-    width: 30%;
+    width: 100px;
     margin: auto;
     margin-top: 5px;
+    transition: width 0.5s;
+    transition-timing-function: ease-out;
 }
+
+.card img:hover{
+    width: 200px;
+}
+
 .card h1,h2,h3{
     margin-top: 10px;
     margin-bottom: 10px;
