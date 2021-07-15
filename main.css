@@ -94,9 +94,8 @@ html{
 }
 
 .det{
-    position: fixed;
-    left: 60%;
-    transform:translateX(-60%);
+    position: absolute;
+    left: 55%;
 }
 
 .float-left{
