@@ -1,4 +1,4 @@
-html{
+html {
     background-color: silver;
 }
 
@@ -6,9 +6,9 @@ html{
     content: "";
     clear: both;
     display: table;
-  }
-  
-.parent{
+}
+
+.parent {
     margin: auto;
     margin-top: 5%;
     width: 70vw;
@@ -17,21 +17,20 @@ html{
     height: fit-content;
 }
 
-.left{
+.left {
     float: left;
     width: 30%;
     margin: auto
 }
 
-.right{
+.right {
     float: right;
     width: 68%;
     margin: auto
 }
 
-
-
-.card{
+.card {
+    position: relative;
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: white;
@@ -41,19 +40,32 @@ html{
     margin: auto;
     margin-top: 10px;
     text-align: center;
+    background-image: linear-gradient(to bottom right, white, silver);
+    z-index: 1;
 }
 
-.card:hover{
-    background-image: linear-gradient(to bottom right, white , #FFD700);
+.card::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, white, gold);
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
 }
-.right .card{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 0px;
 
+.card:hover::before {
+    opacity: 1;
 }
-.card img{
-    
+
+.right .card {
+    padding: 5px 20px;
+}
+
+.card img {
     width: 100px;
     margin: auto;
     margin-top: 5px;
@@ -61,67 +73,68 @@ html{
     transition-timing-function: ease-out;
 }
 
-.card img:hover{
+.card img:hover {
     width: 200px;
 }
 
-.card h1,h2,h3{
+.card h1, h2, h3 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.left .card p{
+
+.left .card p {
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.card a{
+.card a {
     text-decoration: none;
     color: inherit;
 }
 
-.card a:hover{
+.card a:hover {
     color: black;
 }
-.name{
+
+.name {
     font-family: "Helvetica";
     font-weight: normal;
 }
 
-.webname{
+.webname {
     font-family: "Helvetica";
     font-weight: normal;
     text-align: left;
 }
 
-.link{
+.link {
     font-family: "Garamond";
     font-weight: normal;
     color: rgb(122, 122, 122);
     float: right;
 }
 
-.details{
+.details {
     font-family: "Garamond";
     font-weight: normal;
     color: rgb(122, 122, 122);
 }
 
-.det{
+.det {
     position: absolute;
     left: 55%;
 }
 
-.float-left{
+.float-left {
     float: left;
 }
 
-.float-right{
+.float-right {
     float: right;
 }
 
-hr{
+hr {
     opacity: 30%;
     padding: 0px;
     margin: 0px;
 }
-
