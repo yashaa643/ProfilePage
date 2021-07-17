@@ -1,6 +1,6 @@
 html {
     height: 100%;
-    background-image: linear-gradient(to bottom right, white, silver);
+    background-image: linear-gradient(135deg, white, silver);
 }
 
 .clearfix::after {
@@ -41,7 +41,7 @@ html {
     margin: auto;
     margin-top: 10px;
     text-align: center;
-    background-image: linear-gradient(to bottom right, white, silver);
+    background-image: linear-gradient(135deg, white, silver);
     z-index: 1;
 }
 
@@ -52,7 +52,7 @@ html {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to bottom right, white, gold);
+    background-image: linear-gradient(135deg, white, gold);
     z-index: -1;
     transition: opacity 0.5s linear;
     opacity: 0;
@@ -71,7 +71,7 @@ html {
     margin: auto;
     margin-top: 10px;
     text-align: center;
-    background-image: linear-gradient(to bottom right, white, silver);
+    background-image: linear-gradient(135deg, white, silver);
     z-index: 1;
     height: 12.42vw;
 }
@@ -207,5 +207,5 @@ hr {
     opacity: 30%;
     padding: 0px;
     margin: 0px;
-}
+git }
 
