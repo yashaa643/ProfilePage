@@ -1,5 +1,6 @@
 html {
-    background-color: silver;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, white, silver);
 }
 
 .clearfix::after {
@@ -60,6 +61,70 @@ html {
 .card:hover::before {
     opacity: 1;
 }
+#magic {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 105%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, white, silver);
+    z-index: 1;
+    height: 12.42vw;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .3em;
+}
+
+#magic::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(135deg, #723362, #9d223c);
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+
+#magic:hover::before {
+    opacity: 1;
+}
+
+#magic span {
+    opacity: 0;
+    transition: opacity 1300ms;
+}
+
+#magic p{
+    vertical-align: middle;
+}
+
+#magic span:nth-child(1)  { transition-delay:  200ms }
+#magic span:nth-child(2)  { transition-delay: 1200ms }
+#magic span:nth-child(3)  { transition-delay:  800ms }
+#magic span:nth-child(4)  { transition-delay:  300ms }
+#magic span:nth-child(5)  { transition-delay:  700ms }
+#magic span:nth-child(6)  { transition-delay:  600ms }
+#magic span:nth-child(7)  { transition-delay:  400ms }
+#magic span:nth-child(8)  { transition-delay:  900ms }
+#magic span:nth-child(9)  { transition-delay:  700ms }
+#magic span:nth-child(10) { transition-delay:   50ms }
+
+#magic:hover span {
+    opacity: 1
+}
+
+
+
 
 .right .card {
     padding: 5px 20px;
@@ -138,3 +203,4 @@ hr {
     padding: 0px;
     margin: 0px;
 }
+
