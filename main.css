@@ -74,12 +74,6 @@ html {
     background-image: linear-gradient(to bottom right, white, silver);
     z-index: 1;
     height: 12.42vw;
-    color: #fff;
-    font-weight: 300;
-    font-size: 1.8em;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: .3em;
 }
 
 #magic::before {
@@ -105,19 +99,30 @@ html {
 }
 
 #magic p{
-    vertical-align: middle;
+    height: 40px;
+    margin-top: 6.5%;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.8em;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: .1em;
+    
 }
 
-#magic span:nth-child(1)  { transition-delay:  200ms }
-#magic span:nth-child(2)  { transition-delay: 1200ms }
-#magic span:nth-child(3)  { transition-delay:  800ms }
-#magic span:nth-child(4)  { transition-delay:  300ms }
-#magic span:nth-child(5)  { transition-delay:  700ms }
-#magic span:nth-child(6)  { transition-delay:  600ms }
-#magic span:nth-child(7)  { transition-delay:  400ms }
-#magic span:nth-child(8)  { transition-delay:  900ms }
-#magic span:nth-child(9)  { transition-delay:  700ms }
-#magic span:nth-child(10) { transition-delay:   50ms }
+#magic span:nth-child(1)  { transition-delay: 200ms }
+#magic span:nth-child(2)  { transition-delay: 300ms }
+#magic span:nth-child(3)  { transition-delay: 400ms }
+#magic span:nth-child(4)  { transition-delay: 500ms }
+#magic span:nth-child(5)  { transition-delay: 600ms }
+#magic span:nth-child(6)  { transition-delay: 700ms }
+#magic span:nth-child(7)  { transition-delay: 800ms }
+#magic span:nth-child(8)  { transition-delay: 900ms }
+#magic span:nth-child(9)  { transition-delay: 1000ms }
+#magic span:nth-child(10) { transition-delay: 1100ms }
+#magic span:nth-child(11) { transition-delay: 1200ms }
+#magic span:nth-child(12) { transition-delay: 1300ms }
+
 
 #magic:hover span {
     opacity: 1
